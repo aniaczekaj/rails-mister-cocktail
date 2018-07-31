@@ -1,0 +1,72 @@
+.navbar-flats {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: #e1c4c466;
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-flats-brand {
+  color: blue;
+}
+
+.navbar-flats-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.navbar-logo  {
+  font: $logo-fonts !important;
+  color: $pink;
+  font-size: 40px;
+  font-style: oblique;
+  margin: 0px 10px;
+}
+.navbar-logo:hover {
+  text-decoration: none;
+  color: #e36278;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+
+.btn, input {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px #0006;
+  margin: 0px 10px;
+  background: white;
+}
+input {
+  width: 250px;
+  height: 40px;
+  color: gray;
+  padding: 0 10px;
+  border: none;
+  font-style: oblique;
+}
+.add {
+  width: 180px;
+  color: white;
+  background: pink;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.btn:hover {
+  color: gray;
+}
+
+.navbar-flats-link {
+  color: #616668;
+  font-size: 14px;
+}
+.navbar-flats-link:hover {
+  color: #da552f;
+  text-decoration: none;
+}

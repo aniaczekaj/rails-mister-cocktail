@@ -21,3 +21,8 @@ ingredients = JSON.parse(file.read)
 ingredients["drinks"].each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
+require "faker"
+
+20.times do
+  Cocktail.create(name: Faker::Coffee.blend_name)
+end

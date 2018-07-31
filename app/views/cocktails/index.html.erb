@@ -1,15 +1,18 @@
-<div class='container'>
-  <h1>All our Cocktails</h1>
-    <div class="row">
-      <% @cocktails.each do |cocktail|%>
-      <div class="col-xs-6 col-md-4">
-        <div class='card'>
-          <div class='card-body'>
-            <div class='card-name'><h3><%= cocktail.name %></h3></div>
-            </div>
-          </div>
+<div class="container">
+  <div class="title"><h3>Our Cocktails</h3></div>
+  <div class="row">
+    <% @cocktails.each do |cocktail|%>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.2)), url('https://www.funnyhowflowersdothat.co.uk/sites/flowers/files/styles/article_portrait/public/field/image/photo-2015-01-17-5.jpeg?itok=NLtfyQAY');">
+        <div class="card-description">
+          <h2><%= cocktail.name %></h2>
+        </div>
+        <h2><%= link_to "", cocktail_path(cocktail), class:'link' %></h2>
       </div>
-      <% end %>
     </div>
+    <% end %>
+  </div>
 </div>
+
+
 

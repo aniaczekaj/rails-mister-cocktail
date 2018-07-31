@@ -1,0 +1,14 @@
+<div class='navbar-flats'>
+  <div class="navbar-flats-brand">
+    <%= link_to "Cocktails", cocktails_path, class:'navbar-logo' %>
+    <i class="far fa-lemon navbar-logo"></i>
+  </div>
+  <div class="navbar-flats-right">
+    <div class='form-group'>
+      <input type="text" name="Search" value="Search for drinks">
+      <input type="submit" value="Search" class='btn search'>
+      <%=link_to 'Add cocktail', new_cocktail_path, class:'btn add'%>
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+<div class='container'>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="cocktail-pic" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.2)), url('http://supermancooks.com/wp-content/uploads/2016/05/pink-se%C3%B1orita2a.jpg');">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class='cocktail'>
+        <div class="cocktail-description">
+          <div class='header'>
+            <h2><%= @cocktail.name %></h2>
+          </div>
+          <div class='description'>
+            <h3>Nice, refreshing coctail</h3>
+          </div>
+          <div class='recipe'>
+            <h3>Recipe:</h3>
+             <ul>
+                <% @cocktail.doses.each do |d| %>
+                <li> <%=d[:description] %> <%=d.ingredient[:name] %> </li>
+                <% end %>
+            </ul>
+          </div>
+          <div class='controls'>
+            <%=link_to 'New recipe', new_cocktail_dose_path(@cocktail), class:'btn add'%>
+            <%=link_to 'Delete', new_cocktail_path, class:'btn add'%>
+            <%=link_to 'Upload a picture', new_cocktail_path, class:'btn add'%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- http://supermancooks.com/wp-content/uploads/2016/05/pink-se%C3%B1orita2a.jpg -->
+<!-- https://i.pinimg.com/originals/2b/08/39/2b08390df70dd8b21c30c035af7dce7a.jpg' -->
