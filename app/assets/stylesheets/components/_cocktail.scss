@@ -1,12 +1,12 @@
-.container{
-  font: $coktail-fonts;
-}
 .cocktail{
   height: 80vh;
   margin: 20px;
   display: flex;
   flex-direction: column;
-
+  font-family: $coktail-fonts;
+}
+.cocktail h1, h2, h3 {
+  font-family: $coktail-fonts;
 }
 .cocktail-pic{
   background-position: center;

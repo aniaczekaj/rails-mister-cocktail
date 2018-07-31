@@ -12,7 +12,12 @@
     <div class="form-group">
       <%= f.input :name, class: "form-control input" %>
     </div>
+    <div class="form-group">
+      <%= f.input :photo, class: "form-control input" %>
+      <%= f.input :photo_cache, as: :hidden, class: "form-control input" %>
+    </div>
 
     <%= f.submit "Add cocktail", class: "btn add" %>
   <% end %>
 </div>
+

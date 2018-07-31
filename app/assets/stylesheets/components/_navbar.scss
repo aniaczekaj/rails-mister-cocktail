@@ -20,10 +20,15 @@
   text-align: center;
 }
 .navbar-logo  {
-  font: $logo-fonts !important;
+  font-family: $logo-fonts;
   color: $pink;
   font-size: 40px;
   font-style: oblique;
+  margin: 0px 10px;
+}
+.far {
+  color: $pink;
+  font-size: 40px;
   margin: 0px 10px;
 }
 .navbar-logo:hover {
